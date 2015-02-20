@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gridster Demo</title>
+    <meta name="author" content="Laura Moser">
+    <meta name="description" content="Intro to Gridster.JS">
+    <link rel="stylesheet" type="text/css" href="css/jquery.gridster.min.css">
+    <!-- Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+
+
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+       <section class="demo">
+        <h1>Welcome to my Dashboard</h1>
+        <div class="gridster">
+            <ul>
+                <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="gs-w facebook"><i class="fa fa-facebook fa-2x"></i></li>
+                <li data-row="2" data-col="1" data-sizex="1" data-sizey="1" class="gs-w twitter"><i class="fa fa-twitter fa-2x"></i></li>
+                <li data-row="3" data-col="1" data-sizex="1" data-sizey="1" class="gs-w google"><i class="fa fa-google-plus fa-2x"></i></li>
+                <li data-row="1" data-col="2" data-sizex="2" data-sizey="1" class="gs-w weather">
+                    <iframe class="weather_source" style="display: block;" src="http://cdn1.willyweather.com/widget/loadView.html?id=11490" width="280" height="82" frameborder="0" scrolling="no"></iframe><a style="margin: -20px 0 0 0;text-indent: -9999em;z-index: 1;display: block;height: 20px;position: relative" href="http://www.willyweather.com/wa/spokane-county/northwest-spokane.html">local weather</a>
+                </li>
+                <li data-row="2" data-col="2" data-sizex="2" data-sizey="2" class="gs-w calendar">
+                  <div id="owl-demo" class="owl-carousel owl-theme">
+
+                    <div class="item"><img src="images/fullimage1.jpg" alt="1"></div>
+                      <div class="item"><img src="images/fullimage2.jpg" alt="2"></div>
+                      <div class="item"><img src="images/fullimage3.jpg" alt="3"></div>
+                      
+                  </div>
+              </li>
+              <li data-row="1" data-col="4" data-sizex="1" data-sizey="1" class="gs-w pinterest"><i class="fa fa-pinterest fa-2x"></i></li>
+              <li data-row="2" data-col="4" data-sizex="2" data-sizey="1" class="gs-w quote">
+                <blockquote>
+                 Design is not just what it looks like and feels like. Design is how it works.
+                </blockquote>
+                <p>-STEVE JOBS</p>
+             </li>
+            <li data-row="3" data-col="4" data-sizex="1" data-sizey="1" class="gs-w home"><i class="fa fa-home fa-2x"></i></li>
+            <li data-row="1" data-col="5" data-sizex="1" data-sizey="1" class="gs-w mail"><i class="fa fa-envelope fa-2x"></i></li></li>
+            <li data-row="3" data-col="5" data-sizex="1" data-sizey="1" class="gs-w settings"><i class="fa fa-gears fa-2x"></i></li>
+            <li data-row="1" data-col="6" data-sizex="1" data-sizey="1" class="gs-w travel"><i class="fa-plane fa fa-2x"></i></li>
+            <li data-row="2" data-col="6" data-sizex="1" data-sizey="2" class="gs-w blog"><i class="fa fa-comment fa-2x"></i></li>
+        </ul>
+    </div>
+</section>
+</div>  
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.gridster.min.js" charster="utf-8"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+
+$(function() {
+    var gridster = $(".gridster ul").gridster({
+        widget_margins: [10, 10],
+        widget_base_dimensions: [140, 140],
+        min_cols: 6,
+    }).data('gridster');
+});
+</script>
+</body>
+</html>

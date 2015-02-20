@@ -1,0 +1,144 @@
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,600,900,100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300,500,700);
+
+body {
+    
+    font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #FFF;
+    background: #6F7A93 url("../images/11.jpg") no-repeat;
+    background-size: cover;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1 {
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* Gridster styles */
+.container{
+
+}
+.demo {
+    margin: 3em 0;
+    padding: 7.5em 0 5.5em;
+
+}
+
+.demo:hover .gridster {
+    opacity: 1;
+}
+
+.gridster {
+    width: 940px;
+    margin: 0 auto;
+
+    opacity: .8!important;
+
+    -webkit-transition: opacity .6s;
+    -moz-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    -ms-transition: opacity .6s;
+    transition: opacity .6s;
+}
+
+.gridster .gs-w {
+
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.gridster ul {
+    position: relative;
+}
+
+.gridster li {
+    text-align: center;
+}
+
+.gridster li:after {
+    position: absolute;
+    bottom: 5px;
+    left:0;
+    right:0;
+}
+
+.gridster li:before {
+    display: block;
+    height:50px;
+    width:100%;
+    position: absolute;
+    top:35%;
+    left:0;
+    right:0;
+}
+.facebook i, .twitter i, .google i, .mail i, .pinterest i, .settings i, .home i, .blog i, .travel i{
+    margin-top: 38%; 
+}
+/* box styles*/
+.facebook { background-color: #2b5797;}
+
+
+.facebook:after{ content:'Facebook'; }
+
+.twitter { background-color: #3cf;}
+.twitter:after{ content:'Twitter'; }
+
+.google { background-color: #da532c;}
+.google:after{ content:'Google+'; }
+
+.pinterest { background-color: #b91d47;}
+.pinterest:after{ content:'Pinterest'; }
+
+.mail { background-color: #8224E3;}
+.mail:after{ content:'Mail'; }
+
+.settings { background-color: #666666;}
+.settings:after{ content:'Settings'; }
+
+.calendar {background-color: #2c3e50;}
+.calendar_source {padding: 20px 0 0 20px;}
+
+.weather { background-color: #f1c40f; }
+.weather_source {padding: 22px 0 0 10px;}
+
+.quote { background-color: #0F1F89;}
+
+.home { background-color: #00BF03;}
+.home:after{ content:'Home'; }
+
+.blog { background-color: #F26E02;}
+.blog:after{ content:'Blog'; }
+
+.travel { background-color: #00a300;}
+.travel:after{ content:'Traveling'; }
+
+/*carousel styling*/
+#owl-demo{
+    width: 300px;
+    height: 300px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 300px;
+    height: auto;
+}
+.owl-theme .owl-controls{
+    margin-top: 0;
+}
+/*carousel styling ends here*/
